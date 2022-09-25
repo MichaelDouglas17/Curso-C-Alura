@@ -26,17 +26,19 @@ int main(){
     printf("  \\______________________________/             \n");
     printf("\n\n");
 
-    int segundos =  (0);
-    srand(segundos);
+    //gerando número aleatório;
 
-    int numerogrande = rand();
-    int numerosecreto =  numerogrande % 100;
+    srand(time(0));
+    int numerosecreto = rand() % 100;
+    
+    // sistemas de pontos
     int chute;
     int tentativa = 1;
     double pontos = 1000;
-
     int acertou = 0;
-
+    
+    //gerando níveis de dificuldades
+    
     int nivel;
     printf("Qual nivel de dificuldade?\n");
     printf("(1) Facil (2) Medio (3)Dificil\n\n");
